@@ -463,7 +463,7 @@ async function experimentInit() {
   Welcome_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'Welcome_text',
-    text: 'Sie werden im Folgenden aufgefordert, zwischen \n\nzwei Symbolen links und rechts zu wählen.\n\n\n\nSie können dies tun, indem Sie auf den \n\nSchieberegler am unteren Rand klicken.\n\n\n\nOb Sie richtig gewählt haben,\n\nwird durch ein Bild in der Mitte\n\ndes Bildschirms angezeigt.\n\n\n\nWir beginnen mit einigen Probeläufen,\n\ndamit Sie das Experiment kennenlernen können.\n\n\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
+    text: 'Sie werden im Folgenden aufgefordert, zwischen \nzwei Symbolen links und rechts zu wählen.\n\nSie können dies tun, indem Sie auf den \nSchieberegler am unteren Rand klicken.\n\nOb Sie richtig gewählt haben,\nwird durch ein Bild in der Mitte\ndes Bildschirms angezeigt.\n\nWir beginnen mit einigen Probeläufen,\ndamit Sie das Experiment kennenlernen können.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -479,7 +479,7 @@ async function experimentInit() {
   text_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_3',
-    text: 'Sie werden gleich links und rechts auf dem \n\nBildschirm zwei Symbole sehen, die Wörter \n\nrepräsentieren. \n\n\n\nEines davon wird wahrscheinlich als freundliches \n\nLob interpretiert werden, das andere als \n\nBeleidigung.\n\n\n\nStellen Sie sich vor, Sie wählen das Symbol aus \n\nund sagen dieses Wort zu der Person in der Mitte \n\ndes Bildschirms. An ihrer Reaktion können Sie \n\nerkennen, wie das Wort interpretiert wurde.\n\n\n\nSie können das Symbol auswählen, indem Sie auf den \n\nSchieberegler am unteren Rand klicken. \n\nSie können die Stärke angeben, mit der Sie das \n\njeweilige Symbol wählen wollen, indem Sie weiter \n\nrechts oder links vom Schieberegler klicken.\n\n\n\nVersuchen wir eine erste Runde!\n\n',
+    text: 'Sie werden gleich links und rechts auf dem \nBildschirm zwei Symbole sehen, die Wörter \nrepräsentieren. \n\nEines davon wird wahrscheinlich als freundliches \nLob interpretiert werden, das andere als \nBeleidigung.\n\nStellen Sie sich vor, Sie wählen das Symbol aus \nund sagen dieses Wort zu der Person in der Mitte \ndes Bildschirms. An ihrer Reaktion können Sie \nerkennen, wie das Wort interpretiert wurde.\n\nSie können das Symbol auswählen, indem Sie auf den \nSchieberegler am unteren Rand klicken. \nSie können die Stärke angeben, mit der Sie das \njeweilige Symbol wählen wollen, indem Sie weiter \nrechts oder links vom Schieberegler klicken.\n\nVersuchen wir eine erste Runde!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -592,7 +592,7 @@ async function experimentInit() {
   text_4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_4',
-    text: 'Wie Sie gesehen haben, verändert sich das Bild in\n\nder Mitte in Abhängigkeit von Ihrer Antwort.\n\n\n\nEin fröhliches Gesicht bedeutet, dass das von \n\nIhnen gewählte Wort als Lob interpretiert wurde, \n\nein wütendes Gesicht, dass das Wort als \n\nBeleidigung interpretiert wurde. \n\n\n\nAllerdings sind diese Wörter etwas zweideutig, so \n\ndass manchmal ein eher freundliches Wort als \n\nBeleidigung interpretiert wird und umgekehrt.\n\n\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
+    text: 'Wie Sie gesehen haben, verändert sich das Bild in\nder Mitte in Abhängigkeit von Ihrer Antwort.\n\nEin fröhliches Gesicht bedeutet, dass das von \nIhnen gewählte Wort als Lob interpretiert wurde, \nein wütendes Gesicht, dass das Wort als \nBeleidigung interpretiert wurde. \n\nAllerdings sind diese Wörter etwas zweideutig, so \ndass manchmal ein eher freundliches Wort als \nBeleidigung interpretiert wird und umgekehrt.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -608,7 +608,7 @@ async function experimentInit() {
   text = new visual.TextStim({
     win: psychoJS.window,
     name: 'text',
-    text: 'In der nächsten Runde sehen Sie andere Symbole und \n\nBilder in der Mitte. \n\n\n\nDiesmal stellen Sie sich vor, dass Sie versuchen, \n\neine fremde Maschine zu verstehen. \n\nSie sehen zwei Knöpfe, auf denen Symbole stehen. \n\nSie wissen nicht, was sie bedeuten, aber das Bild \n\nin der Mitte (das den Bildschirm der Maschine \n\ndarstellt) zeigt Ihnen das Ergebnis des \n\nTastendrucks.\n\n\n\nSie können das Symbol wieder auswählen, indem Sie \n\nauf den Schieberegler am unteren Rand klicken. \n\nAuch hier geben Sie die Stärke an, mit der Sie \n\ndieses Symbol wählen wollen, indem Sie weiter nach \n\nlinks oder rechts klicken.\n\n\n\nProbieren wir es aus!\n\n',
+    text: 'In der nächsten Runde sehen Sie andere Symbole und \nBilder in der Mitte. \n\nDiesmal stellen Sie sich vor, dass Sie versuchen, \neine fremde Maschine zu verstehen. \nSie sehen zwei Knöpfe, auf denen Symbole stehen. \nSie wissen nicht, was sie bedeuten, aber das Bild \nin der Mitte (das den Bildschirm der Maschine \ndarstellt) zeigt Ihnen das Ergebnis des \nTastendrucks.\n\nSie können das Symbol wieder auswählen, indem Sie \nauf den Schieberegler am unteren Rand klicken. \nAuch hier geben Sie die Stärke an, mit der Sie \ndieses Symbol wählen wollen, indem Sie weiter nach \nlinks oder rechts klicken.\n\nProbieren wir es aus!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -624,7 +624,7 @@ async function experimentInit() {
   Allesklartext_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'Allesklartext_2',
-    text: 'Wie Sie gesehen haben, ändert sich das Bild in der \n\nMitte wieder in Abhängigkeit von Ihrer Antwort.\n\n\n\nAuch hier sind die Symbole etwas zweideutig, so \n\ndass ein Tastendruck in einer Runde zu einem \n\nbunten, sich bewegenden Bild und in der nächsten \n\nRunde zu einem grauen, verschwommenen Bild führen \n\nkann.\n\n',
+    text: 'Wie Sie gesehen haben, ändert sich das Bild in der \nMitte wieder in Abhängigkeit von Ihrer Antwort.\n\nAuch hier sind die Symbole etwas zweideutig, so \ndass ein Tastendruck in einer Runde zu einem \nbunten, sich bewegenden Bild und in der nächsten \nRunde zu einem grauen, verschwommenen Bild führen \nkann.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -660,7 +660,7 @@ async function experimentInit() {
   CycleText1 = new visual.TextStim({
     win: psychoJS.window,
     name: 'CycleText1',
-    text: 'Wir beginnen jetzt mit dem ersten Block.\n\n\n\nAlles wird genauso ablaufen wie bei den \n\nTrainingsversuchen. Beachten Sie, dass die \n\nSymbole die Seiten wechseln können!\n\n\n\nGeben Sie Ihre Antwort, indem Sie auf den \n\nSchieberegler unten klicken.\n\n\n\nDrücken Sie eine beliebige Taste, um den ersten \n\nBlock zu starten!\n\n',
+    text: 'Wir beginnen jetzt mit dem ersten Block.\n\nAlles wird genauso ablaufen wie bei den \nTrainingsversuchen. Beachten Sie, dass die \nSymbole die Seiten wechseln können!\n\nGeben Sie Ihre Antwort, indem Sie auf den \nSchieberegler unten klicken.\n\nDrücken Sie eine beliebige Taste, um den ersten \nBlock zu starten!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0,
@@ -696,7 +696,7 @@ async function experimentInit() {
   CycleText4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'CycleText4',
-    text: 'Sie haben nun einen Block abgeschlossen.\n\n\n\nIm nächsten Block werden Sie andere \n\nBilder sehen.\n\n\n\nWie bei den Trainingsversuchen haben Sie es \n\nentweder mit Menschen zu tun, denen Sie ein \n\nWort sagen, oder mit einer Maschine, auf der \n\nSie Knöpfe drücken müssen.\n\n\n\nWenn Sie bereit sind, drücken Sie eine \n\nbeliebige Taste, um den nächsten Block zu \n\nstarten.\n\n',
+    text: 'Sie haben nun einen Block abgeschlossen.\n\nIm nächsten Block werden Sie andere \nBilder sehen.\n\nWie bei den Trainingsversuchen haben Sie es \nentweder mit Menschen zu tun, denen Sie ein \nWort sagen, oder mit einer Maschine, auf der \nSie Knöpfe drücken müssen.\n\nWenn Sie bereit sind, drücken Sie eine \nbeliebige Taste, um den nächsten Block zu \nstarten.\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0,
