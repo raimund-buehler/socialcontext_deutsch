@@ -459,7 +459,7 @@ async function experimentInit() {
   Welcome_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'Welcome_text',
-    text: '\nSie werden im Folgenden aufgefordert, zwischen zwei\nSymbolen, die Sie auf der linken und rechten Seite des\nBildschirms sehen werden, zu wählen.\n\nSie können dies tun, indem Sie den Schieberegler am\nunteren Rand mit der Maus nach links oder rechts\nverschieben.\n\nOb Sie richtig gewählt haben, wird durch ein Bild in der\nMitte des Bildschirms angezeigt.\n\nWir beginnen mit einigen Probeläufen, damit Sie das den\nAblauf des Experiments kennenlernen können.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
+    text: '\nSie werden im Folgenden aufgefordert, zwischen zwei\nSymbolen, die Sie auf der linken und rechten Seite des\nBildschirms sehen werden, zu wählen.\n\nSie können dies tun, indem Sie den Schieberegler am\nunteren Rand mit der Maus nach links oder rechts\nverschieben.\n\nOb Sie richtig gewählt haben, wird durch ein Bild in der\nMitte des Bildschirms angezeigt.\n\nWir beginnen mit einigen Probeläufen, damit Sie den\nAblauf des Experiments kennenlernen können.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -616,7 +616,7 @@ async function experimentInit() {
   text = new visual.TextStim({
     win: psychoJS.window,
     name: 'text',
-    text: 'In der nächsten Runde sehen Sie links und rechts andere\nSymbole und andere Bilder in der Mitte. \n\nDiesmal stellen Sie sich vor, dass Sie eine Art\nKaleidoskop vor sich haben.\n\nDurch Auswählen der Symbole wird das Bild in der Mitte\nentweder bunt und bewegt (= das Kaleidoskop wird\ngestartet) oder grau.\n\nSie können das Symbol wieder auswählen, indem Sie \nden Schieberegler am unteren Rand mit der Maus\nverschieben. Auch hier können Sie auswählen, wie sicher\nSie sich sind, indem Sie den Schieberegler weiter nach\nlinks oder rechts verschieben.\n\nProbieren wir es aus!\n\n',
+    text: 'In der nächsten Runde sehen Sie links und rechts andere\nSymbole und andere Bilder in der Mitte. \n\nStellen Sie sich diesmal vor, dass Sie eine Art\nKaleidoskop vor sich haben.\n\nDurch Auswählen der Symbole wird das Bild in der Mitte\nentweder bunt und bewegt (= das Kaleidoskop wird\ngestartet) oder grau.\n\nSie können das Symbol wieder auswählen, indem Sie \nden Schieberegler am unteren Rand mit der Maus\nverschieben. Auch hier können Sie auswählen, wie sicher\nSie sich sind, indem Sie den Schieberegler weiter nach\nlinks oder rechts verschieben.\n\nProbieren wir es aus!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -2562,7 +2562,6 @@ function LateralizationByCycleRoutineBegin(snapshot) {
     //shuffle(numbarray[BlockCounter]);
     //console.log("numbarray[BlockCounter]:", numbarray[BlockCounter]);
     shuffle(filenames_noxl);
-    console.log(filenames_noxl);
     console.log("Cycletext for next block cond: ", ((BlockCounter in [1, 2, 3]) && (CycleCounter == 0)))
     
     //"blocks:" + BlockCounter.toString()) + 
@@ -3247,6 +3246,8 @@ function Intertrial_IntervalRoutineBegin(snapshot) {
     continueRoutine = true; // until we're told otherwise
     // update component parameters for each repeat
     console.log(TrialCounter);
+    console.log(CycleCounter);
+    console.log(BlockCounter)
     
     // keep track of which components have finished
     Intertrial_IntervalComponents = [];
