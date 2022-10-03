@@ -459,7 +459,7 @@ async function experimentInit() {
   Welcome_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'Welcome_text',
-    text: 'Sie werden im Folgenden aufgefordert, zwischen \n\nzwei Symbolen, die Sie auf der linken und rechten Seite des Bildschirms sehen werden, zu wählen.\n\nSie können dies tun, indem Sie den \n\nSchieberegler am unteren Rand mit der Maus nach links oder rechts verschieben.\n\nOb Sie richtig gewählt haben,\nwird durch ein Bild in der Mitte\ndes Bildschirms angezeigt.\n\nWir beginnen mit einigen Probeläufen,\ndamit Sie das den Ablauf des Experiments kennenlernen können.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
+    text: '\nSie werden im Folgenden aufgefordert, zwischen zwei\nSymbolen, die Sie auf der linken und rechten Seite des\nBildschirms sehen werden, zu wählen.\n\nSie können dies tun, indem Sie den Schieberegler am\nunteren Rand mit der Maus nach links oder rechts\nverschieben.\n\nOb Sie richtig gewählt haben, wird durch ein Bild in der\nMitte des Bildschirms angezeigt.\n\nWir beginnen mit einigen Probeläufen, damit Sie das den\nAblauf des Experiments kennenlernen können.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -475,7 +475,7 @@ async function experimentInit() {
   text_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_3',
-    text: 'Sie werden gleich links und rechts auf dem \nBildschirm zwei Symbole sehen, die Wörter \ndarstellen. \n\nEines davon wird wahrscheinlich als \nLob interpretiert werden, das andere als \nBeleidigung.\n\nStellen Sie sich vor, Sie wählen das Symbol aus \n\nund sagen dieses Wort zu der Person in der Mitte \n\ndes Bildschirms. Anhand der Reaktion der Person können Sie \n\nerkennen, wie das Wort von dieser interpretiert wurde.\n\n\nSie können das Symbol auswählen, indem Sie den \n\nSchieberegler am unteren Rand mit der Maus nach links oder rechts verschieben.\nSie können angeben, wie sicher Sie sich sind, indem Sie den Schieberegler weiter nach links oder rechts verschieben.\n\nVersuchen wir eine erste Runde!\n\n',
+    text: 'Sie werden gleich links und rechts auf dem \nBildschirm zwei Symbole sehen, die Wörter \ndarstellen. \n\nEines davon wird wahrscheinlich als \nLob interpretiert werden, das andere als \nBeleidigung.\n\nStellen Sie sich vor, Sie wählen das Symbol aus \nund sagen dieses Wort zu der Person in der Mitte \ndes Bildschirms. Anhand der Reaktion der Person können Sie \nerkennen, wie das Wort von dieser interpretiert wurde.\n\nSie können das Symbol auswählen, indem Sie den\nSchieberegler am unteren Rand mit der Maus nach links oder rechts verschieben. Sie können angeben, wie sicher Sie\nsich sind, indem Sie den Schieberegler weiter nach links\noder rechts verschieben.\n\nVersuchen wir eine erste Runde!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -600,7 +600,7 @@ async function experimentInit() {
   text_4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_4',
-    text: 'Wie Sie gesehen haben, verändert sich das Bild in\nder Mitte in Abhängigkeit von Ihrer Antwort.\n\nEin fröhliches Gesicht bedeutet, dass das von \nIhnen gewählte Wort als Lob interpretiert wurde. \nEin wütendes Gesicht bedeutet, dass das Wort als \nBeleidigung interpretiert wurde. \n\nAllerdings sind diese Wörter etwas zweideutig, so \ndass manchmal ein eher freundliches Wort als \nBeleidigung interpretiert wird und umgekehrt.\n\nDie verschiedenen Personen reagieren aber alle ähnlich.\nEs gibt also keine Unterschiede in der Wahrscheinlichkeit, wie die Wörter interpretiert werden.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
+    text: 'Wie Sie gesehen haben, verändert sich das Bild in\nder Mitte in Abhängigkeit von Ihrer Antwort.\n\nEin fröhliches Gesicht bedeutet, dass das von \nIhnen gewählte Wort als Lob interpretiert wurde. \nEin wütendes Gesicht bedeutet, dass das Wort als \nBeleidigung interpretiert wurde. \n\nAllerdings sind diese Wörter etwas zweideutig, so \ndass manchmal ein eher freundliches Wort als \nBeleidigung interpretiert wird und umgekehrt.\n\nDie verschiedenen Personen reagieren aber alle ähnlich.\nEs gibt also keine Unterschiede in der Wahrscheinlichkeit,\nwie die Wörter interpretiert werden.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -616,7 +616,7 @@ async function experimentInit() {
   text = new visual.TextStim({
     win: psychoJS.window,
     name: 'text',
-    text: 'In der nächsten Runde sehen Sie links und rechts andere Symbole und \n\nandere Bilder in der Mitte. \n\n\n\nDiesmal stellen Sie sich vor, dass Sie eine Art\nKaleidoskop vor sich haben.\n\nDurch Auswählen der Symbole wird das Bild in der Mitte entweder bunt und bewegt (= das Kaleidoskop wird gestartet) oder grau.\n\nSie können das Symbol wieder auswählen, indem Sie \n\nden Schieberegler am unteren Rand mit der Maus verschieben. \nAuch hier können Sie auswählen, wie sicher Sie sich sind, \nindem Sie den Schieberegler weiter nach links oder rechts verschieben.\n\n\nProbieren wir es aus!\n\n',
+    text: 'In der nächsten Runde sehen Sie links und rechts andere\nSymbole und andere Bilder in der Mitte. \n\nDiesmal stellen Sie sich vor, dass Sie eine Art\nKaleidoskop vor sich haben.\n\nDurch Auswählen der Symbole wird das Bild in der Mitte\nentweder bunt und bewegt (= das Kaleidoskop wird\ngestartet) oder grau.\n\nSie können das Symbol wieder auswählen, indem Sie \nden Schieberegler am unteren Rand mit der Maus\nverschieben. Auch hier können Sie auswählen, wie sicher\nSie sich sind, indem Sie den Schieberegler weiter nach\nlinks oder rechts verschieben.\n\nProbieren wir es aus!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -632,7 +632,7 @@ async function experimentInit() {
   Allesklartext_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'Allesklartext_2',
-    text: 'Wie Sie gesehen haben, ändert sich das Bild in der \nMitte wieder in Abhängigkeit von Ihrer Antwort.\n\nAuch hier sind die Symbole etwas zweideutig, so \ndass ein Symbol in einer Runde zu einem Start\n(ein buntes, bewegtes Bild) und in der nächsten \nRunde zu einem grauen, verschwommenen Bild führen \nkann.\n\nDie verschiedenen Bilder sagen wieder nichts über die Wahrscheinlichkeit aus, mit der ein Symbol zu einem Start führt.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!',
+    text: 'Wie Sie gesehen haben, ändert sich das Bild in der \nMitte wieder in Abhängigkeit von Ihrer Antwort.\n\nAuch hier sind die Symbole etwas zweideutig, so \ndass ein Symbol in einer Runde zu einem Start\n(ein buntes, bewegtes Bild) und in der nächsten \nRunde zu einem grauen, verschwommenen Bild führen \nkann.\n\nDie verschiedenen Bilder sagen aber nichts über die\nWahrscheinlichkeit aus, mit der ein Symbol zu einem Start\nführt.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -2774,12 +2774,14 @@ function trialRoutineBegin(snapshot) {
         deco = "deco/bubble.png";
         deco_pos_left = [-0.6, -0.04];
         deco_pos_right = [0.6, -0.04];
+        symb = "ist eher ein Lob";
         } else if ((currentLoop.name == "training_nonsocial" && currentLoop.thisN == 0) || (currentLoop.name == "trials" && currentLoop.thisN == 0 && Blocklist[blocks.thisRepN] == "nonsocial")){
         CueLeft = CueLeft_ns;
         CueRight = CueRight_ns;
         deco = "deco/button.png";
         deco_pos_left = [-0.6, -0.01];
         deco_pos_right = [0.6, -0.01];
+        symb = "steht eher für Start";
         }
     
     [CueLeft, CueRight] = switchSides(CueLeft, CueRight)
