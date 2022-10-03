@@ -137,6 +137,8 @@ console.log("CueRight_s_t: ", CueRight_s_t)
 var [CueLeft_ns_t, CueRight_ns_t] = getCues(nonsocial_cues_t);
 console.log("CueLeft_ns_t: ", CueLeft_ns_t)
 console.log("CueRight_ns_t: ", CueRight_ns_t)
+
+var symb;
 var train_times = [[6, 0], [6, 0], [0, 6], [0, 6]];
 shuffle(train_times);
 var resp = NaN;
@@ -274,54 +276,54 @@ psychoJS.start({
   expName: expName,
   expInfo: expInfo,
   resources: [
-    {'name': 'ADFES/Freigestellt/Joy/Used/F04-Joy-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Joy/Used/F04-Joy-Face Forward_freigestellt.mp4'},
-    {'name': 'Mandalas_new/neutral/Mandala2_neutral.mp4', 'path': 'Mandalas_new/neutral/Mandala2_neutral.mp4'},
-    {'name': 'ADFES/Freigestellt/Anger/M02-Anger-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Anger/M02-Anger-Face Forward_freigestellt.mp4'},
-    {'name': 'kanji/4/a.png', 'path': 'kanji/4/a.png'},
-    {'name': 'trainingtrials_social.xlsx', 'path': 'trainingtrials_social.xlsx'},
-    {'name': 'kanji/4/d.png', 'path': 'kanji/4/d.png'},
-    {'name': 'kanji/2/d.png', 'path': 'kanji/2/d.png'},
-    {'name': 'kanji/1/a.png', 'path': 'kanji/1/a.png'},
-    {'name': 'ADFES/Freigestellt/Anger/F01-Anger-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Anger/F01-Anger-Face Forward_freigestellt.mp4'},
-    {'name': 'kanji/2/b.png', 'path': 'kanji/2/b.png'},
-    {'name': 'Mandalas_new/happy/Mandala1_happy.mp4', 'path': 'Mandalas_new/happy/Mandala1_happy.mp4'},
-    {'name': 'Mandalas_new/happy/Mandala3_happy.mp4', 'path': 'Mandalas_new/happy/Mandala3_happy.mp4'},
-    {'name': 'kanji/3/b.png', 'path': 'kanji/3/b.png'},
-    {'name': 'Mandalas_new/happy/Mandala2_happy.mp4', 'path': 'Mandalas_new/happy/Mandala2_happy.mp4'},
-    {'name': 'ADFES/Freigestellt/Neutral/M02-Neutral-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Neutral/M02-Neutral-Face Forward_freigestellt.mp4'},
-    {'name': 'kanji/training/b.png', 'path': 'kanji/training/b.png'},
-    {'name': 'ADFES/Freigestellt/Anger/M06-Anger-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Anger/M06-Anger-Face Forward_freigestellt.mp4'},
-    {'name': 'kanji/4/b.png', 'path': 'kanji/4/b.png'},
-    {'name': 'ADFES/Freigestellt/Anger/F04-Anger-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Anger/F04-Anger-Face Forward_freigestellt.mp4'},
-    {'name': 'kanji/2/a.png', 'path': 'kanji/2/a.png'},
-    {'name': 'kanji/training/a.png', 'path': 'kanji/training/a.png'},
-    {'name': 'ADFES/Freigestellt/Joy/Used/M06-Joy-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Joy/Used/M06-Joy-Face Forward_freigestellt.mp4'},
-    {'name': 'kanji/4/c.png', 'path': 'kanji/4/c.png'},
-    {'name': 'kanji/3/d.png', 'path': 'kanji/3/d.png'},
-    {'name': 'kanji/3/c.png', 'path': 'kanji/3/c.png'},
-    {'name': 'Mandalas_new/neutral/Mandala1_neutral.mp4', 'path': 'Mandalas_new/neutral/Mandala1_neutral.mp4'},
-    {'name': 'Mandalas_new/angry/Mandala2_angry.mp4', 'path': 'Mandalas_new/angry/Mandala2_angry.mp4'},
     {'name': 'kanji/1/b.png', 'path': 'kanji/1/b.png'},
-    {'name': 'Mandalas_new/happy/Mandala4_happy.mp4', 'path': 'Mandalas_new/happy/Mandala4_happy.mp4'},
-    {'name': 'kanji/1/d.png', 'path': 'kanji/1/d.png'},
-    {'name': 'Mandalas_new/angry/Mandala1_angry.mp4', 'path': 'Mandalas_new/angry/Mandala1_angry.mp4'},
-    {'name': 'kanji/2/c.png', 'path': 'kanji/2/c.png'},
-    {'name': 'Mandalas_new/neutral/Mandala3_neutral.mp4', 'path': 'Mandalas_new/neutral/Mandala3_neutral.mp4'},
-    {'name': 'ADFES/Freigestellt/Joy/Used/F01-Joy-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Joy/Used/F01-Joy-Face Forward_freigestellt.mp4'},
-    {'name': 'Mandalas_new/angry/Mandala3_angry.mp4', 'path': 'Mandalas_new/angry/Mandala3_angry.mp4'},
-    {'name': 'kanji/1/c.png', 'path': 'kanji/1/c.png'},
     {'name': 'deco/bubble.png', 'path': 'deco/bubble.png'},
-    {'name': 'Mandalas_new/neutral/Mandala4_neutral.mp4', 'path': 'Mandalas_new/neutral/Mandala4_neutral.mp4'},
-    {'name': 'Mandalas_new/angry/Mandala4_angry.mp4', 'path': 'Mandalas_new/angry/Mandala4_angry.mp4'},
     {'name': 'ADFES/Freigestellt/Neutral/F04-Neutral-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Neutral/F04-Neutral-Face Forward_freigestellt.mp4'},
-    {'name': 'ADFES/Freigestellt/Joy/Used/M02-Joy-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Joy/Used/M02-Joy-Face Forward_freigestellt.mp4'},
-    {'name': 'deco/button.png', 'path': 'deco/button.png'},
-    {'name': 'trainingtrials_nonsocial.xlsx', 'path': 'trainingtrials_nonsocial.xlsx'},
-    {'name': 'kanji/3/a.png', 'path': 'kanji/3/a.png'},
-    {'name': 'ADFES/Freigestellt/Neutral/F01-Neutral-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Neutral/F01-Neutral-Face Forward_freigestellt.mp4'},
+    {'name': 'Mandalas_new/angry/Mandala4_angry.mp4', 'path': 'Mandalas_new/angry/Mandala4_angry.mp4'},
+    {'name': 'ADFES/Freigestellt/Anger/M02-Anger-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Anger/M02-Anger-Face Forward_freigestellt.mp4'},
+    {'name': 'kanji/3/b.png', 'path': 'kanji/3/b.png'},
+    {'name': 'kanji/1/c.png', 'path': 'kanji/1/c.png'},
+    {'name': 'Mandalas_new/neutral/Mandala3_neutral.mp4', 'path': 'Mandalas_new/neutral/Mandala3_neutral.mp4'},
+    {'name': 'Mandalas_new/neutral/Mandala4_neutral.mp4', 'path': 'Mandalas_new/neutral/Mandala4_neutral.mp4'},
+    {'name': 'kanji/3/c.png', 'path': 'kanji/3/c.png'},
+    {'name': 'Mandalas_new/happy/Mandala1_happy.mp4', 'path': 'Mandalas_new/happy/Mandala1_happy.mp4'},
+    {'name': 'Mandalas_new/angry/Mandala3_angry.mp4', 'path': 'Mandalas_new/angry/Mandala3_angry.mp4'},
     {'name': 'kanji/training/d.png', 'path': 'kanji/training/d.png'},
+    {'name': 'trainingtrials_nonsocial.xlsx', 'path': 'trainingtrials_nonsocial.xlsx'},
+    {'name': 'kanji/training/b.png', 'path': 'kanji/training/b.png'},
+    {'name': 'kanji/4/b.png', 'path': 'kanji/4/b.png'},
+    {'name': 'kanji/2/a.png', 'path': 'kanji/2/a.png'},
+    {'name': 'Mandalas_new/angry/Mandala1_angry.mp4', 'path': 'Mandalas_new/angry/Mandala1_angry.mp4'},
+    {'name': 'kanji/3/a.png', 'path': 'kanji/3/a.png'},
+    {'name': 'kanji/2/c.png', 'path': 'kanji/2/c.png'},
+    {'name': 'ADFES/Freigestellt/Neutral/F01-Neutral-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Neutral/F01-Neutral-Face Forward_freigestellt.mp4'},
+    {'name': 'kanji/1/d.png', 'path': 'kanji/1/d.png'},
+    {'name': 'ADFES/Freigestellt/Joy/Used/M06-Joy-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Joy/Used/M06-Joy-Face Forward_freigestellt.mp4'},
+    {'name': 'trainingtrials_social.xlsx', 'path': 'trainingtrials_social.xlsx'},
+    {'name': 'ADFES/Freigestellt/Neutral/M02-Neutral-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Neutral/M02-Neutral-Face Forward_freigestellt.mp4'},
+    {'name': 'ADFES/Freigestellt/Anger/M06-Anger-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Anger/M06-Anger-Face Forward_freigestellt.mp4'},
+    {'name': 'ADFES/Freigestellt/Joy/Used/F01-Joy-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Joy/Used/F01-Joy-Face Forward_freigestellt.mp4'},
+    {'name': 'kanji/4/c.png', 'path': 'kanji/4/c.png'},
+    {'name': 'kanji/4/a.png', 'path': 'kanji/4/a.png'},
+    {'name': 'Mandalas_new/neutral/Mandala2_neutral.mp4', 'path': 'Mandalas_new/neutral/Mandala2_neutral.mp4'},
+    {'name': 'kanji/4/d.png', 'path': 'kanji/4/d.png'},
+    {'name': 'kanji/1/a.png', 'path': 'kanji/1/a.png'},
+    {'name': 'ADFES/Freigestellt/Neutral/M06-Neutral-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Neutral/M06-Neutral-Face Forward_freigestellt.mp4'},
+    {'name': 'kanji/training/a.png', 'path': 'kanji/training/a.png'},
+    {'name': 'deco/button.png', 'path': 'deco/button.png'},
+    {'name': 'kanji/3/d.png', 'path': 'kanji/3/d.png'},
+    {'name': 'kanji/2/b.png', 'path': 'kanji/2/b.png'},
+    {'name': 'Mandalas_new/happy/Mandala3_happy.mp4', 'path': 'Mandalas_new/happy/Mandala3_happy.mp4'},
+    {'name': 'ADFES/Freigestellt/Anger/F01-Anger-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Anger/F01-Anger-Face Forward_freigestellt.mp4'},
     {'name': 'kanji/training/c.png', 'path': 'kanji/training/c.png'},
-    {'name': 'ADFES/Freigestellt/Neutral/M06-Neutral-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Neutral/M06-Neutral-Face Forward_freigestellt.mp4'}
+    {'name': 'ADFES/Freigestellt/Joy/Used/F04-Joy-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Joy/Used/F04-Joy-Face Forward_freigestellt.mp4'},
+    {'name': 'Mandalas_new/happy/Mandala2_happy.mp4', 'path': 'Mandalas_new/happy/Mandala2_happy.mp4'},
+    {'name': 'kanji/2/d.png', 'path': 'kanji/2/d.png'},
+    {'name': 'ADFES/Freigestellt/Joy/Used/M02-Joy-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Joy/Used/M02-Joy-Face Forward_freigestellt.mp4'},
+    {'name': 'ADFES/Freigestellt/Anger/F04-Anger-Face Forward_freigestellt.mp4', 'path': 'ADFES/Freigestellt/Anger/F04-Anger-Face Forward_freigestellt.mp4'},
+    {'name': 'Mandalas_new/angry/Mandala2_angry.mp4', 'path': 'Mandalas_new/angry/Mandala2_angry.mp4'},
+    {'name': 'Mandalas_new/happy/Mandala4_happy.mp4', 'path': 'Mandalas_new/happy/Mandala4_happy.mp4'},
+    {'name': 'Mandalas_new/neutral/Mandala1_neutral.mp4', 'path': 'Mandalas_new/neutral/Mandala1_neutral.mp4'}
   ]
 });
 
@@ -364,6 +366,7 @@ var instr_train_sClock;
 var text_3;
 var key_resp_3;
 var training_trialClock;
+var text_2;
 var fix_cross_3;
 var cue_left_2;
 var cue_right_2;
@@ -455,7 +458,7 @@ async function experimentInit() {
   Welcome_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'Welcome_text',
-    text: 'Sie werden im Folgenden aufgefordert, zwischen \nzwei Symbolen links und rechts zu wählen.\n\nSie können dies tun, indem Sie auf den \nSchieberegler am unteren Rand klicken.\n\nOb Sie richtig gewählt haben,\nwird durch ein Bild in der Mitte\ndes Bildschirms angezeigt.\n\nWir beginnen mit einigen Probeläufen,\ndamit Sie das Experiment kennenlernen können.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
+    text: 'Sie werden im Folgenden aufgefordert, zwischen \nzwei Symbolen links und rechts zu wählen.\n\nSie können dies tun, indem Sie mit der Maus auf den \nSchieberegler am unteren Rand klicken.\n\nOb Sie richtig gewählt haben,\nwird durch ein Bild in der Mitte\ndes Bildschirms angezeigt.\n\nWir beginnen mit einigen Probeläufen,\ndamit Sie das Experiment kennenlernen können.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -471,7 +474,7 @@ async function experimentInit() {
   text_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_3',
-    text: 'Sie werden gleich links und rechts auf dem \nBildschirm zwei Symbole sehen, die Wörter \nrepräsentieren. \n\nEines davon wird wahrscheinlich als freundliches \nLob interpretiert werden, das andere als \nBeleidigung.\n\nStellen Sie sich vor, Sie wählen das Symbol aus \nund sagen dieses Wort zu der Person in der Mitte \ndes Bildschirms. An ihrer Reaktion können Sie \nerkennen, wie das Wort interpretiert wurde.\n\nSie können das Symbol auswählen, indem Sie auf den \nSchieberegler am unteren Rand klicken. \nSie können die Stärke angeben, mit der Sie das \njeweilige Symbol wählen wollen, indem Sie weiter \nrechts oder links vom Schieberegler klicken.\n\nVersuchen wir eine erste Runde!\n\n',
+    text: 'Sie werden gleich links und rechts auf dem \nBildschirm zwei Symbole sehen, die Wörter \ndarstellen. \n\nEines davon wird wahrscheinlich als \nLob interpretiert werden, das andere als \nBeleidigung.\n\nStellen Sie sich vor, Sie sagen dieses Wort zu der Person in der Mitte des Bildschirms. \nAn ihrer Reaktion können Sie \nerkennen, wie das Wort interpretiert wurde.\n\nSie können das Symbol auswählen, indem Sie auf den \nSchieberegler am unteren Rand klicken. \nSie angeben, wie sicher Sie sich sind, indem Sie weiter \nrechts oder links klicken.\n\nVersuchen wir eine erste Runde!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -484,6 +487,18 @@ async function experimentInit() {
   
   // Initialize components for Routine "training_trial"
   training_trialClock = new util.Clock();
+  text_2 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_2',
+    text: '',
+    font: font_choice,
+    units: undefined, 
+    pos: [0, 0.4], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -1.0 
+  });
+  
   fix_cross_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'fix_cross_3',
@@ -493,7 +508,7 @@ async function experimentInit() {
     pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0,
     languageStyle: 'LTR',
     color: new util.Color(color_choice),  opacity: 1,
-    depth: -1.0 
+    depth: -2.0 
   });
   
   cue_left_2 = new visual.ImageStim({
@@ -503,7 +518,7 @@ async function experimentInit() {
     ori : 0, pos : [(- 0.6), 0], size : [0.2, 0.2],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
-    texRes : 512, interpolate : true, depth : -3.0 
+    texRes : 512, interpolate : true, depth : -4.0 
   });
   cue_right_2 = new visual.ImageStim({
     win : psychoJS.window,
@@ -512,16 +527,16 @@ async function experimentInit() {
     ori : 0, pos : [0.6, 0], size : [0.2, 0.2],
     color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
-    texRes : 512, interpolate : true, depth : -4.0 
+    texRes : 512, interpolate : true, depth : -5.0 
   });
   slide_response_2 = new visual.Slider({
     win: psychoJS.window, name: 'slide_response_2',
     startValue: undefined,
-    size: [0.5, 0.05], pos: [0, (- 0.4)], ori: 0.0, units: 'height',
-    labels: undefined, fontSize: 0.05, ticks: [1, 2, 3, 4, 5],
+    size: [1.25, 0.05], pos: [0, (- 0.35)], ori: 0.0, units: 'height',
+    labels: ["Sicher links", "Vielleicht links", "Wei\u00df nicht", "Vielleicht rechts", "Sicher rechts"], fontSize: 0.025, ticks: [1, 2, 3, 4, 5],
     granularity: 0.0, style: ["RATING"],
-    color: new util.Color('LightGray'), markerColor: new util.Color('White'), lineColor: new util.Color('White'), 
-    opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: -5, 
+    color: new util.Color('White'), markerColor: new util.Color('White'), lineColor: new util.Color('White'), 
+    opacity: undefined, fontFamily: font_choice, bold: true, italic: false, depth: -6, 
     flip: false,
   });
   
@@ -600,7 +615,7 @@ async function experimentInit() {
   text = new visual.TextStim({
     win: psychoJS.window,
     name: 'text',
-    text: 'In der nächsten Runde sehen Sie andere Symbole und \nBilder in der Mitte. \n\nDiesmal stellen Sie sich vor, dass Sie versuchen, \neine fremde Maschine zu verstehen. \nSie sehen zwei Knöpfe, auf denen Symbole stehen. \nSie wissen nicht, was sie bedeuten, aber das Bild \nin der Mitte (das den Bildschirm der Maschine \ndarstellt) zeigt Ihnen das Ergebnis des \nTastendrucks.\n\nSie können das Symbol wieder auswählen, indem Sie \nauf den Schieberegler am unteren Rand klicken. \nAuch hier geben Sie die Stärke an, mit der Sie \ndieses Symbol wählen wollen, indem Sie weiter nach \nlinks oder rechts klicken.\n\nProbieren wir es aus!\n\n',
+    text: 'In der nächsten Runde sehen Sie andere Symbole und \nBilder. \n\nDiesmal haben Sie eine Art Kaleidoskop vor sich.\n\nDurch Auswählen der Symbole wird das Bild in der Mitte entweder bunt (das Kaleidoskop wird gestartet) oder grau.\n\nSie können das Symbol wieder auswählen, indem Sie mit der Maus\nauf den Schieberegler am unteren Rand klicken. \nAuch hier können Sie auswählen, wie sicher Sie sich sind indem Sie weiter nach \nlinks oder rechts klicken.\n\nProbieren wir es aus!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -836,7 +851,7 @@ async function experimentInit() {
   text_check_s = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_check_s',
-    text: 'Welches dieser Symbole ist Ihrer Meinung nach eher ein Lob?',
+    text: 'Welches dieser Symbole ist eher ein Lob?',
     font: font_choice,
     units: undefined, 
     pos: [0, 0.2], height: 0.025,  wrapWidth: undefined, ori: 0.0,
@@ -879,7 +894,7 @@ async function experimentInit() {
   text_check_ns = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_check_ns',
-    text: 'Welches dieser Symbole wird Ihrer Meinung nach am ehesten dazu führen, dass die Maschine funktioniert (ein buntes, sich bewegendes Bild auf dem Bildschirm erzeugt)?',
+    text: 'Welches dieser Symbole startet eher das Kaleidoskop?',
     font: font_choice,
     units: undefined, 
     pos: [0, 0.2], height: 0.025,  wrapWidth: undefined, ori: 0.0,
@@ -1546,6 +1561,7 @@ var CueRight;
 var deco;
 var deco_pos_left;
 var deco_pos_right;
+var symb;
 var cue_left_path;
 var cue_right_path;
 var new_neutral_3Clock;
@@ -1575,16 +1591,19 @@ function training_trialRoutineBegin(snapshot) {
         console.log("deco_pos_left", deco_pos_left);
         deco_pos_right = [0.6, -0.04];
         console.log("deco_pos_right", deco_pos_right);
+        symb = "ist ein Lob";
         } else if ((currentLoop.name == "training_nonsocial" && currentLoop.thisN == 0) || (currentLoop.name == "trials" && currentLoop.thisN == 0 && Blocklist[blocks.thisRepN] == "nonsocial")){
         CueLeft = CueLeft_ns_t;
         CueRight = CueRight_ns_t;
         deco = "deco/button.png";
         deco_pos_left = [-0.6, -0.01];
         deco_pos_right = [0.6, -0.01];
+        symb = "startet das Kaleidoskop?";
         }
     
     cue_left_path = CueLeft.path;
     cue_right_path = CueRight.path;
+    text_2.setText((("Welches Symbol " + symb) + " ?"));
     new_neutral_3Clock = new util.Clock();
     new_neutral_3 = new visual.MovieStim({
       win: psychoJS.window,
@@ -1603,6 +1622,7 @@ function training_trialRoutineBegin(snapshot) {
     slide_response_2.reset()
     // keep track of which components have finished
     training_trialComponents = [];
+    training_trialComponents.push(text_2);
     training_trialComponents.push(fix_cross_3);
     training_trialComponents.push(new_neutral_3);
     training_trialComponents.push(cue_left_2);
@@ -1626,6 +1646,20 @@ function training_trialRoutineEachFrame() {
     t = training_trialClock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
+    
+    // *text_2* updates
+    if (t >= 1 && text_2.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_2.tStart = t;  // (not accounting for frame time here)
+      text_2.frameNStart = frameN;  // exact frame index
+      
+      text_2.setAutoDraw(true);
+    }
+
+    frameRemains = 1 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (text_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      text_2.setAutoDraw(false);
+    }
     
     // *fix_cross_3* updates
     if (t >= 0 && fix_cross_3.status === PsychoJS.Status.NOT_STARTED) {
