@@ -1075,7 +1075,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="if(CycleCounter &lt; 5){&amp;#10;CycleCounter = CycleCounter + 1;&amp;#10;} else {&amp;#10;    if(CycleCounter == 1) {&amp;#10;        CycleCounter = 0;&amp;#10;        console.log(&quot;CycleCounter reset to:&quot; + CycleCounter)&amp;#10;    }&amp;#10;}" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="if(CycleCounter &lt; 5){&amp;#10;CycleCounter = CycleCounter + 1;&amp;#10;} else {&amp;#10;    if(CycleCounter == 5) {&amp;#10;        CycleCounter = 0;&amp;#10;        console.log(&quot;CycleCounter reset to:&quot; + CycleCounter)&amp;#10;    }&amp;#10;}" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_2" valType="code" updates="None" name="name"/>
