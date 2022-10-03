@@ -190,7 +190,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Sie werden im Folgenden aufgefordert, zwischen &amp;#10;zwei Symbolen links und rechts zu wählen.&amp;#10;&amp;#10;Sie können dies tun, indem Sie mit der Maus auf den &amp;#10;Schieberegler am unteren Rand klicken.&amp;#10;&amp;#10;Ob Sie richtig gewählt haben,&amp;#10;wird durch ein Bild in der Mitte&amp;#10;des Bildschirms angezeigt.&amp;#10;&amp;#10;Wir beginnen mit einigen Probeläufen,&amp;#10;damit Sie das Experiment kennenlernen können.&amp;#10;&amp;#10;Drücken Sie eine beliebige Taste, um fortzufahren!&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="Sie werden im Folgenden aufgefordert, zwischen &amp;#10;&amp;#10;zwei Symbolen, die Sie auf der linken und rechten Seite des Bildschirms sehen werden, zu wählen.&amp;#10;&amp;#10;Sie können dies tun, indem Sie den &amp;#10;&amp;#10;Schieberegler am unteren Rand mit der Maus nach links oder rechts verschieben.&amp;#10;&amp;#10;Ob Sie richtig gewählt haben,&amp;#10;wird durch ein Bild in der Mitte&amp;#10;des Bildschirms angezeigt.&amp;#10;&amp;#10;Wir beginnen mit einigen Probeläufen,&amp;#10;damit Sie das den Ablauf des Experiments kennenlernen können.&amp;#10;&amp;#10;Drücken Sie eine beliebige Taste, um fortzufahren!&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="70" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -346,7 +346,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="$CycleText4_dur" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Sie haben nun einen Block abgeschlossen.&amp;#10;&amp;#10;Im nächsten Block werden Sie andere &amp;#10;Bilder sehen.&amp;#10;&amp;#10;Wie bei den Trainingsversuchen haben Sie es &amp;#10;entweder mit Menschen zu tun, denen Sie ein &amp;#10;Wort sagen, oder mit einer Maschine, auf der &amp;#10;Sie Knöpfe drücken müssen.&amp;#10;&amp;#10;Wenn Sie bereit sind, drücken Sie eine &amp;#10;beliebige Taste, um den nächsten Block zu &amp;#10;starten.&amp;#10;&amp;#10;" valType="extendedStr" updates="constant" name="text"/>
+        <Param val="Sie haben nun einen Block abgeschlossen.&amp;#10;&amp;#10;Im nächsten Block werden Sie andere &amp;#10;Bilder sehen.&amp;#10;&amp;#10;Wie bei den Trainingsversuchen haben Sie es &amp;#10;entweder mit Menschen oder einem Kaleidoskop zu tun.&amp;#10;&amp;#10;Wenn Sie bereit sind, drücken Sie eine &amp;#10;beliebige Taste, um den nächsten Block zu &amp;#10;starten.&amp;#10;&amp;#10;" valType="extendedStr" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -391,7 +391,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Wie Sie gesehen haben, ändert sich das Bild in der &amp;#10;Mitte wieder in Abhängigkeit von Ihrer Antwort.&amp;#10;&amp;#10;Auch hier sind die Symbole etwas zweideutig, so &amp;#10;dass ein Tastendruck in einer Runde zu einem &amp;#10;bunten, sich bewegenden Bild und in der nächsten &amp;#10;Runde zu einem grauen, verschwommenen Bild führen &amp;#10;kann.&amp;#10;&amp;#10;Drücken Sie eine beliebige Taste, um fortzufahren!" valType="str" updates="constant" name="text"/>
+        <Param val="Wie Sie gesehen haben, ändert sich das Bild in der &amp;#10;Mitte wieder in Abhängigkeit von Ihrer Antwort.&amp;#10;&amp;#10;Auch hier sind die Symbole etwas zweideutig, so &amp;#10;dass ein Symbol in einer Runde zu einem Start&amp;#10;(ein buntes, bewegtes Bild) und in der nächsten &amp;#10;Runde zu einem grauen, verschwommenen Bild führen &amp;#10;kann.&amp;#10;&amp;#10;Die verschiedenen Bilder sagen wieder nichts über die Wahrscheinlichkeit aus, mit der ein Symbol zu einem Start führt.&amp;#10;&amp;#10;Drücken Sie eine beliebige Taste, um fortzufahren!" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="70" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -451,6 +451,31 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_4" valType="code" updates="None" name="name"/>
       </CodeComponent>
+      <TextComponent name="trial_header">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="$font_choice" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="trial_header" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="1" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="6" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="$'Welches Symbol ' + symb + ' ?'" valType="str" updates="set every repeat" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <TextComponent name="fix_cross">
         <Param val="$color_choice" valType="str" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -611,26 +636,26 @@
       </ImageComponent>
       <SliderComponent name="slide_response">
         <Param val="White" valType="color" updates="constant" name="borderColor"/>
-        <Param val="LightGray" valType="color" updates="constant" name="color"/>
+        <Param val="White" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="6" valType="code" updates="None" name="durationEstim"/>
-        <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
+        <Param val="White" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="$font_choice" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="0" valType="num" updates="constant" name="granularity"/>
         <Param val="" valType="code" updates="None" name="initVal"/>
-        <Param val="" valType="list" updates="constant" name="labels"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="[&quot;Sicher links&quot;, &quot;Vielleicht links&quot;, &quot;Weiß nicht&quot;, &quot;Vielleicht rechts&quot;, &quot;Sicher rechts&quot;]" valType="list" updates="constant" name="labels"/>
+        <Param val="0.025" valType="num" updates="constant" name="letterHeight"/>
         <Param val="slide_response" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, -0.4)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, -0.35)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="constant" name="readOnly"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.5, 0.05)" valType="list" updates="constant" name="size"/>
+        <Param val="(1.25, 0.05)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="1" valType="code" updates="None" name="startVal"/>
@@ -668,7 +693,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Wie Sie gesehen haben, verändert sich das Bild in&amp;#10;der Mitte in Abhängigkeit von Ihrer Antwort.&amp;#10;&amp;#10;Ein fröhliches Gesicht bedeutet, dass das von &amp;#10;Ihnen gewählte Wort als Lob interpretiert wurde, &amp;#10;ein wütendes Gesicht, dass das Wort als &amp;#10;Beleidigung interpretiert wurde. &amp;#10;&amp;#10;Allerdings sind diese Wörter etwas zweideutig, so &amp;#10;dass manchmal ein eher freundliches Wort als &amp;#10;Beleidigung interpretiert wird und umgekehrt.&amp;#10;&amp;#10;Drücken Sie eine beliebige Taste, um fortzufahren!&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="Wie Sie gesehen haben, verändert sich das Bild in&amp;#10;der Mitte in Abhängigkeit von Ihrer Antwort.&amp;#10;&amp;#10;Ein fröhliches Gesicht bedeutet, dass das von &amp;#10;Ihnen gewählte Wort als Lob interpretiert wurde. &amp;#10;Ein wütendes Gesicht bedeutet, dass das Wort als &amp;#10;Beleidigung interpretiert wurde. &amp;#10;&amp;#10;Allerdings sind diese Wörter etwas zweideutig, so &amp;#10;dass manchmal ein eher freundliches Wort als &amp;#10;Beleidigung interpretiert wird und umgekehrt.&amp;#10;&amp;#10;Die verschiedenen Personen reagieren aber alle ähnlich.&amp;#10;Es gibt also keine Unterschiede in der Wahrscheinlichkeit, wie die Wörter interpretiert werden.&amp;#10;&amp;#10;Drücken Sie eine beliebige Taste, um fortzufahren!&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="70" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -713,7 +738,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="In der nächsten Runde sehen Sie andere Symbole und &amp;#10;Bilder. &amp;#10;&amp;#10;Diesmal haben Sie eine Art Kaleidoskop vor sich.&amp;#10;&amp;#10;Durch Auswählen der Symbole wird das Bild in der Mitte entweder bunt (das Kaleidoskop wird gestartet) oder grau.&amp;#10;&amp;#10;Sie können das Symbol wieder auswählen, indem Sie mit der Maus&amp;#10;auf den Schieberegler am unteren Rand klicken. &amp;#10;Auch hier können Sie auswählen, wie sicher Sie sich sind indem Sie weiter nach &amp;#10;links oder rechts klicken.&amp;#10;&amp;#10;Probieren wir es aus!&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="In der nächsten Runde sehen Sie links und rechts andere Symbole und &amp;#10;&amp;#10;andere Bilder in der Mitte. &amp;#10;&amp;#10;&amp;#10;&amp;#10;Diesmal stellen Sie sich vor, dass Sie eine Art&amp;#10;Kaleidoskop vor sich haben.&amp;#10;&amp;#10;Durch Auswählen der Symbole wird das Bild in der Mitte entweder bunt und bewegt (= das Kaleidoskop wird gestartet) oder grau.&amp;#10;&amp;#10;Sie können das Symbol wieder auswählen, indem Sie &amp;#10;&amp;#10;den Schieberegler am unteren Rand mit der Maus verschieben. &amp;#10;Auch hier können Sie auswählen, wie sicher Sie sich sind, &amp;#10;indem Sie den Schieberegler weiter nach links oder rechts verschieben.&amp;#10;&amp;#10;&amp;#10;Probieren wir es aus!&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="70" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -758,7 +783,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Sie werden gleich links und rechts auf dem &amp;#10;Bildschirm zwei Symbole sehen, die Wörter &amp;#10;darstellen. &amp;#10;&amp;#10;Eines davon wird wahrscheinlich als &amp;#10;Lob interpretiert werden, das andere als &amp;#10;Beleidigung.&amp;#10;&amp;#10;Stellen Sie sich vor, Sie sagen dieses Wort zu der Person in der Mitte des Bildschirms. &amp;#10;An ihrer Reaktion können Sie &amp;#10;erkennen, wie das Wort interpretiert wurde.&amp;#10;&amp;#10;Sie können das Symbol auswählen, indem Sie auf den &amp;#10;Schieberegler am unteren Rand klicken. &amp;#10;Sie angeben, wie sicher Sie sich sind, indem Sie weiter &amp;#10;rechts oder links klicken.&amp;#10;&amp;#10;Versuchen wir eine erste Runde!&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="Sie werden gleich links und rechts auf dem &amp;#10;Bildschirm zwei Symbole sehen, die Wörter &amp;#10;darstellen. &amp;#10;&amp;#10;Eines davon wird wahrscheinlich als &amp;#10;Lob interpretiert werden, das andere als &amp;#10;Beleidigung.&amp;#10;&amp;#10;Stellen Sie sich vor, Sie wählen das Symbol aus &amp;#10;&amp;#10;und sagen dieses Wort zu der Person in der Mitte &amp;#10;&amp;#10;des Bildschirms. Anhand der Reaktion der Person können Sie &amp;#10;&amp;#10;erkennen, wie das Wort von dieser interpretiert wurde.&amp;#10;&amp;#10;&amp;#10;Sie können das Symbol auswählen, indem Sie den &amp;#10;&amp;#10;Schieberegler am unteren Rand mit der Maus nach links oder rechts verschieben.&amp;#10;Sie können angeben, wie sicher Sie sich sind, indem Sie den Schieberegler weiter nach links oder rechts verschieben.&amp;#10;&amp;#10;Versuchen wir eine erste Runde!&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="70" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -1399,7 +1424,7 @@
         <Param val="var deco;&amp;#10;var deco_pos_left;&amp;#10;var deco_pos_right;&amp;#10;var cue_left_path;&amp;#10;var cue_right_path;&amp;#10;var CueLeft;&amp;#10;var CueRight;&amp;#10;&amp;#10;var kanjis_t = get_kanjis(&quot;training&quot;);&amp;#10;&amp;#10;var social_cues_t = kanjis_t.slice(0, 2);&amp;#10;var nonsocial_cues_t = kanjis_t.slice(2);&amp;#10;console.log(&quot;social_cues_t: &quot;, social_cues_t)&amp;#10;console.log(&quot;nonsocial_cues_t: &quot;, nonsocial_cues_t)&amp;#10;console.log(&quot;getCues(social_cues_t): &quot;, getCues(social_cues_t))&amp;#10;&amp;#10;var [CueLeft_s_t, CueRight_s_t] = getCues(social_cues_t);&amp;#10;console.log(&quot;CueLeft_s_t: &quot;, CueLeft_s_t)&amp;#10;console.log(&quot;CueRight_s_t: &quot;, CueRight_s_t)&amp;#10;var [CueLeft_ns_t, CueRight_ns_t] = getCues(nonsocial_cues_t);&amp;#10;console.log(&quot;CueLeft_ns_t: &quot;, CueLeft_ns_t)&amp;#10;console.log(&quot;CueRight_ns_t: &quot;, CueRight_ns_t)&amp;#10;&amp;#10;var symb;" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="kanjis_t = get_kanjis(&quot;training&quot;)&amp;#10;&amp;#10;thisExp.addData(&quot;kanjis_training&quot;, kanjis_t)&amp;#10;&amp;#10;social_cues_t = kanjis_t[0:2]&amp;#10;nonsocial_cues_t = kanjis_t[2:]&amp;#10;&amp;#10;CueLeft_s_t, CueRight_s_t = getCues(social_cues_t)&amp;#10;CueLeft_ns_t, CueRight_ns_t = getCues(nonsocial_cues_t)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="if ((currentLoop.name == &quot;training_social&quot; &amp;&amp; currentLoop.thisN == 0) || (currentLoop.name == &quot;trials&quot; &amp;&amp; currentLoop.thisN == 0 &amp;&amp; Blocklist[blocks.thisRepN] == &quot;social&quot;)){&amp;#10;    console.log(&quot;currentLoop.name: &quot;, currentLoop.name)&amp;#10;    console.log(&quot;currentLoop.thisN: &quot;, currentLoop.thisN)&amp;#10;    CueLeft = CueLeft_s_t;&amp;#10;    console.log(&quot;CueLeft: &quot;, CueLeft);&amp;#10;    CueRight = CueRight_s_t;&amp;#10;    console.log(&quot;CueRight: &quot;, CueRight);&amp;#10;    deco = &quot;deco/bubble.png&quot;;&amp;#10;    console.log(&quot;deco&quot;, deco);&amp;#10;    deco_pos_left = [-0.6, -0.04];&amp;#10;    console.log(&quot;deco_pos_left&quot;, deco_pos_left);&amp;#10;    deco_pos_right = [0.6, -0.04];&amp;#10;    console.log(&quot;deco_pos_right&quot;, deco_pos_right);&amp;#10;    symb = &quot;ist ein Lob&quot;;&amp;#10;    } else if ((currentLoop.name == &quot;training_nonsocial&quot; &amp;&amp; currentLoop.thisN == 0) || (currentLoop.name == &quot;trials&quot; &amp;&amp; currentLoop.thisN == 0 &amp;&amp; Blocklist[blocks.thisRepN] == &quot;nonsocial&quot;)){&amp;#10;    CueLeft = CueLeft_ns_t;&amp;#10;    CueRight = CueRight_ns_t;&amp;#10;    deco = &quot;deco/button.png&quot;;&amp;#10;    deco_pos_left = [-0.6, -0.01];&amp;#10;    deco_pos_right = [0.6, -0.01];&amp;#10;    symb = &quot;startet das Kaleidoskop?&quot;;&amp;#10;    }&amp;#10;&amp;#10;cue_left_path = CueLeft.path;&amp;#10;cue_right_path = CueRight.path;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if ((currentLoop.name == &quot;training_social&quot; &amp;&amp; currentLoop.thisN == 0) || (currentLoop.name == &quot;trials&quot; &amp;&amp; currentLoop.thisN == 0 &amp;&amp; Blocklist[blocks.thisRepN] == &quot;social&quot;)){&amp;#10;    console.log(&quot;currentLoop.name: &quot;, currentLoop.name)&amp;#10;    console.log(&quot;currentLoop.thisN: &quot;, currentLoop.thisN)&amp;#10;    CueLeft = CueLeft_s_t;&amp;#10;    console.log(&quot;CueLeft: &quot;, CueLeft);&amp;#10;    CueRight = CueRight_s_t;&amp;#10;    console.log(&quot;CueRight: &quot;, CueRight);&amp;#10;    deco = &quot;deco/bubble.png&quot;;&amp;#10;    console.log(&quot;deco&quot;, deco);&amp;#10;    deco_pos_left = [-0.6, -0.04];&amp;#10;    console.log(&quot;deco_pos_left&quot;, deco_pos_left);&amp;#10;    deco_pos_right = [0.6, -0.04];&amp;#10;    console.log(&quot;deco_pos_right&quot;, deco_pos_right);&amp;#10;    symb = &quot;ist eher ein Lob&quot;;&amp;#10;    } else if ((currentLoop.name == &quot;training_nonsocial&quot; &amp;&amp; currentLoop.thisN == 0) || (currentLoop.name == &quot;trials&quot; &amp;&amp; currentLoop.thisN == 0 &amp;&amp; Blocklist[blocks.thisRepN] == &quot;nonsocial&quot;)){&amp;#10;    CueLeft = CueLeft_ns_t;&amp;#10;    CueRight = CueRight_ns_t;&amp;#10;    deco = &quot;deco/button.png&quot;;&amp;#10;    deco_pos_left = [-0.6, -0.01];&amp;#10;    deco_pos_right = [0.6, -0.01];&amp;#10;    symb = &quot;steht eher für Start&quot;;&amp;#10;    }&amp;#10;&amp;#10;cue_left_path = CueLeft.path;&amp;#10;cue_right_path = CueRight.path;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="if (currentLoop.name == &quot;training_social&quot; and currentLoop.thisN == 0) or (currentLoop.name == &quot;trials&quot; and currentLoop.thisN == 0 and Blocklist[blocks.thisRepN] == &quot;social&quot;):&amp;#10;    CueLeft = CueLeft_s_t&amp;#10;    CueRight = CueRight_s_t&amp;#10;    deco = &quot;deco/bubble.png&quot;&amp;#10;    deco_pos_left = (-0.6, -0.04)&amp;#10;    deco_pos_right = (0.6, -0.04)&amp;#10;elif (currentLoop.name == &quot;training_nonsocial&quot; and currentLoop.thisN == 0) or (currentLoop.name == &quot;trials&quot; and currentLoop.thisN == 0 and Blocklist[blocks.thisRepN] == &quot;nonsocial&quot;):&amp;#10;    CueLeft = CueLeft_ns_t&amp;#10;    CueRight = CueRight_ns_t&amp;#10;    deco = &quot;deco/button.png&quot;&amp;#10;    deco_pos_left = (-0.6, -0.01)&amp;#10;    deco_pos_right = (0.6, -0.01)&amp;#10;&amp;#10;cue_left_path = CueLeft.path&amp;#10;cue_right_path = CueRight.path&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Both" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
