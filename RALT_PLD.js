@@ -486,7 +486,7 @@ async function experimentInit() {
     text: 'Sie werden gleich links und rechts auf dem \nBildschirm zwei Symbole sehen, die Wörter \ndarstellen. \n\nEines davon wird wahrscheinlich als \nLob interpretiert werden, das andere als \nBeleidigung.\n\nStellen Sie sich vor, Sie wählen das Symbol aus \nund sagen dieses Wort zu der Person in der Mitte \ndes Bildschirms. Anhand der Reaktion der Person können Sie \nerkennen, wie das Wort von dieser interpretiert wurde.\n\nSie können das Symbol auswählen, indem Sie den\nSchieberegler am unteren Rand mit der Maus nach links oder\nrechts verschieben. Sie können angeben, wie sicher Sie\nsich sind, indem Sie den Schieberegler weiter nach links\noder rechts verschieben.\n\nVersuchen wir eine erste Runde!\n\n',
     font: font_choice,
     units: undefined, 
-    pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
+    pos: [0, 0], height: 0.025,  wrapWidth: 40, ori: 0,
     languageStyle: 'LTR',
     color: new util.Color(color_choice),  opacity: 1,
     depth: 0.0 

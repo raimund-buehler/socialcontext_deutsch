@@ -785,7 +785,7 @@
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
         <Param val="Sie werden gleich links und rechts auf dem &amp;#10;Bildschirm zwei Symbole sehen, die Wörter &amp;#10;darstellen. &amp;#10;&amp;#10;Eines davon wird wahrscheinlich als &amp;#10;Lob interpretiert werden, das andere als &amp;#10;Beleidigung.&amp;#10;&amp;#10;Stellen Sie sich vor, Sie wählen das Symbol aus &amp;#10;und sagen dieses Wort zu der Person in der Mitte &amp;#10;des Bildschirms. Anhand der Reaktion der Person können Sie &amp;#10;erkennen, wie das Wort von dieser interpretiert wurde.&amp;#10;&amp;#10;Sie können das Symbol auswählen, indem Sie den&amp;#10;Schieberegler am unteren Rand mit der Maus nach links oder&amp;#10;rechts verschieben. Sie können angeben, wie sicher Sie&amp;#10;sich sind, indem Sie den Schieberegler weiter nach links&amp;#10;oder rechts verschieben.&amp;#10;&amp;#10;Versuchen wir eine erste Runde!&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="70" valType="code" updates="constant" name="wrapWidth"/>
+        <Param val="40" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
       <KeyboardComponent name="key_resp_3">
         <Param val="" valType="list" updates="constant" name="allowedKeys"/>
