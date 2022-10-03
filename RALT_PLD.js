@@ -3383,7 +3383,7 @@ function LatCounterRoutineEnd(snapshot) {
     if(CycleCounter < 5){
     CycleCounter = CycleCounter + 1;
     } else {
-        if(CycleCounter == 1) {
+        if(CycleCounter == 5) {
             CycleCounter = 0;
             console.log("CycleCounter reset to:" + CycleCounter)
         }
