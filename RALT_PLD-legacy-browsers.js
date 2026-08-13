@@ -6,9 +6,9 @@
 // store info about the experiment session:
 let expName = 'RALT_PLD';  // from the Builder filename that created this script
 let expInfo = {
-    'participant': '',
+    'participant': 'test',
     'session': '1',
-    'group': '',
+    'group': 'test',
 };
 
 // Start code blocks for 'Before Experiment'
@@ -476,7 +476,7 @@ async function experimentInit() {
   text_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_3',
-    text: 'Sie werden gleich links und rechts auf dem \nBildschirm zwei Symbole sehen, die Wörter \ndarstellen. \n\nEines davon wird wahrscheinlich als \nLob interpretiert werden, das andere als \nBeleidigung.\n\nStellen Sie sich vor, Sie wählen das Symbol aus \nund sagen dieses Wort zu der Person in der Mitte \ndes Bildschirms. Anhand der Reaktion der Person können Sie \nerkennen, wie das Wort von dieser interpretiert wurde.\n\nSie können das Symbol auswählen, indem Sie den\nSchieberegler am unteren Rand mit der Maus nach links oder\nrechts verschieben. Sie können angeben, wie sicher Sie\nsich sind, indem Sie den Schieberegler weiter nach links\noder rechts verschieben.\n\nVersuchen wir eine erste Runde!\n\n',
+    text: 'Gleich sehen Sie links und rechts zwei Symbole.\nJedes steht für ein Wort, das Sie der Person in\nder Mitte sagen.\n\nEin Wort wird meistens als Lob verstanden, das\nandere meistens als Beleidigung. Die Wörter sind\nallerdings mehrdeutig: Dasselbe Wort kann einmal\nals Lob und einmal als Beleidigung ankommen.\n\nWie die Person reagiert, zeigt Ihnen, wie Ihr\nWort angekommen ist.\n\nWählen Sie mit dem Schieberegler am unteren Rand\n– nach links für das linke Symbol, nach rechts\nfür das rechte. Je sicherer Sie sind, desto\nweiter schieben Sie ihn.\n\nBeginnen wir mit einer ersten Runde!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 40, ori: 0,
@@ -601,7 +601,7 @@ async function experimentInit() {
   text_4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_4',
-    text: 'Wie Sie gesehen haben, verändert sich das Bild in\nder Mitte in Abhängigkeit von Ihrer Antwort.\n\nEin fröhliches Gesicht bedeutet, dass das von \nIhnen gewählte Wort als Lob interpretiert wurde. \nEin wütendes Gesicht bedeutet, dass das Wort als \nBeleidigung interpretiert wurde. \n\nAllerdings sind diese Wörter etwas zweideutig, so \ndass manchmal ein eher freundliches Wort als \nBeleidigung interpretiert wird und umgekehrt.\n\nDie verschiedenen Personen reagieren aber alle ähnlich.\nEs gibt also keine Unterschiede in der Wahrscheinlichkeit,\nwie die Wörter interpretiert werden.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
+    text: 'Wie Sie gesehen haben, hängt die Reaktion der\nPerson davon ab, welches Symbol Sie wählen.\n\nEin fröhliches Gesicht heißt: Ihr Wort wurde als\nLob verstanden. Ein wütendes Gesicht heißt: Ihr\nWort wurde als Beleidigung verstanden.\n\nAlle Personen reagieren nach demselben Muster.\nEs kommt also nur darauf an, welches Symbol Sie\nwählen – nicht darauf, wer in der Mitte zu sehen\nist.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -617,7 +617,7 @@ async function experimentInit() {
   text = new visual.TextStim({
     win: psychoJS.window,
     name: 'text',
-    text: 'In der nächsten Runde sehen Sie links und rechts andere\nSymbole und andere Bilder in der Mitte. \n\nStellen Sie sich diesmal vor, dass Sie eine Art\nKaleidoskop vor sich haben.\n\nDurch Auswählen der Symbole wird das Bild in der Mitte\nentweder bunt und bewegt (= das Kaleidoskop wird\ngestartet) oder grau.\n\nSie können das Symbol wieder auswählen, indem Sie \nden Schieberegler am unteren Rand mit der Maus\nverschieben. Auch hier können Sie auswählen, wie sicher\nSie sich sind, indem Sie den Schieberegler weiter nach\nlinks oder rechts verschieben.\n\nProbieren wir es aus!\n\n',
+    text: 'In der nächsten Runde sehen Sie andere Symbole\nund ein anderes Bild in der Mitte.\n\nBei einem Symbol leuchtet das Muster meistens\nfarbig auf, beim anderen wird es grau und\nverschwommen. Auch diese Symbole sind mehrdeutig:\nDasselbe Symbol führt nicht immer zum selben\nErgebnis.\n\nSie wählen wieder mit dem Schieberegler. Je\nsicherer Sie sind, desto weiter schieben Sie ihn.\n\nProbieren wir es aus!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -633,7 +633,7 @@ async function experimentInit() {
   Allesklartext_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'Allesklartext_2',
-    text: 'Wie Sie gesehen haben, ändert sich das Bild in der \nMitte wieder in Abhängigkeit von Ihrer Antwort.\n\nAuch hier sind die Symbole etwas zweideutig, so \ndass ein Symbol in einer Runde zu einem Start\n(ein buntes, bewegtes Bild) und in der nächsten \nRunde zu einem grauen, verschwommenen Bild führen \nkann.\n\nDie verschiedenen Bilder sagen aber nichts über die\nWahrscheinlichkeit aus, mit der ein Symbol zu einem Start\nführt.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!',
+    text: 'Wie Sie gesehen haben, hängt auch hier das\nErgebnis davon ab, welches Symbol Sie wählen.\n\nDas Muster leuchtet entweder farbig auf oder wird\ngrau und verschwommen.\n\nAlle Muster verhalten sich gleich. Es kommt also\nnur darauf an, welches Symbol Sie wählen – nicht\ndarauf, welches Muster in der Mitte zu sehen ist.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -705,7 +705,7 @@ async function experimentInit() {
   CycleText4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'CycleText4',
-    text: 'Sie haben nun einen Block abgeschlossen.\n\nIm nächsten Block werden Sie andere \nBilder sehen.\n\nWie bei den Trainingsversuchen haben Sie es \nentweder mit Menschen oder einem Kaleidoskop zu tun.\n\nWenn Sie bereit sind, drücken Sie eine \nbeliebige Taste, um den nächsten Block zu \nstarten.\n\n',
+    text: 'Sie haben nun einen Block abgeschlossen.\n\nIm nächsten Block werden Sie andere \nBilder sehen.\n\nWie bei den Trainingsversuchen sehen Sie \nentweder Personen oder Muster.\n\nWenn Sie bereit sind, drücken Sie eine \nbeliebige Taste, um den nächsten Block zu \nstarten.\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0,
@@ -908,7 +908,7 @@ async function experimentInit() {
   text_check_ns = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_check_ns',
-    text: 'Welches dieser Symbole startet eher das Kaleidoskop?',
+    text: 'Welches dieser Symbole lässt das Muster eher farbig aufleuchten?',
     font: font_choice,
     units: undefined, 
     pos: [0, 0.2], height: 0.025,  wrapWidth: undefined, ori: 0.0,
