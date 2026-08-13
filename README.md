@@ -1,120 +1,62 @@
 # Social Learning Task
 
-A browser-based learning task that compares how people learn from **social** and
-**non-social** feedback. On every trial the participant chooses between two
-symbols; the chosen symbol produces an outcome, and the participant has to work
-out from the outcomes which symbol is the better choice. The two conditions are
-identical in structure and differ only in what the outcome looks like: a person
-reacting, or a pattern changing.
+An experiment comparing how people learn from **social** and **non-social**
+feedback. On each trial the participant picks one of two symbols and sees what
+it produces. The two conditions are structurally identical and differ only in
+the outcome: a person reacting, or a pattern changing.
 
-Built in PsychoPy Builder (2022.2.4) and compiled to JavaScript, so it runs
-online without installing anything.
-
-**▶ [Try the task in your browser](https://run.pavlovia.org/raimundbuehler/social-learning-task-demo)**
-
-The demo starts immediately — participant ID and group are pre-filled with
-`test`, and it advances on mouse click, so nothing needs to be typed. It is a
-shortened public build of the experiment; it is not used for data collection.
-
-## A trial
+Built in PsychoPy Builder and compiled to JavaScript, so it runs in a browser.
+Instructions are in German.
 
 ![A trial in the social condition](docs/screenshots/trial-social.png)
 
-A social-condition trial. The two symbols are the options; the person in the
-middle will react once a choice is made; the slider underneath records both
-which symbol was chosen and how confident the participant is. The non-social
-condition is laid out identically, with a pattern in place of the person.
-
 ## The task
 
-Each trial shows two symbols, one left and one right, and asks which of them is
-associated with the better outcome. The participant answers with a slider:
-direction indicates the choice, distance from the centre indicates confidence,
-so choice and certainty are captured in a single movement.
+Two symbols appear left and right. The participant answers with the slider
+underneath: direction gives the choice, distance from the centre gives
+confidence. Feedback is probabilistic, so the better symbol is the better bet
+rather than a guarantee, and the contingency has to be learned over trials.
 
-Feedback is probabilistic — the better symbol is the better bet, not a
-guarantee — so the contingency has to be learned across repeated trials rather
-than read off any single outcome.
-
-| | Social condition | Non-social condition |
+| | Social | Non-social |
 |---|---|---|
 | Framing | The symbols stand for words said to a person | The symbols act on a pattern |
-| Positive outcome | The person reacts with a happy expression | The pattern lights up in colour |
-| Negative outcome | The person reacts with an angry expression | The pattern turns grey and blurred |
+| Positive outcome | A happy expression | The pattern lights up in colour |
+| Negative outcome | An angry expression | The pattern turns grey and blurred |
 
-Both conditions use short video clips, so motion and timing are matched across
-them. The manipulation is whether the outcome is a social signal or not.
+Both conditions use video, so motion and timing are matched; only the social
+meaning of the outcome differs.
 
-**Structure.** Two training runs (one per condition) introduce the format.
-The main task is 4 blocks × 6 cycles × 4 trials = **96 trials**. Block order is
-randomised at the start and then alternates, giving two social and two
-non-social blocks. Symbols and stimuli change between blocks, so each block is
-a fresh learning problem. Which side a symbol appears on is re-randomised by
-cycle, so side and symbol cannot be confounded. Comprehension checks follow the
-learning phase.
+**Structure.** Two training runs introduce the format, one per condition. The
+main task is 4 blocks × 6 cycles × 4 trials = 96 trials. Block order is
+randomised and then alternates, giving two blocks per condition. Symbols and
+stimuli change between blocks, so each block is a new learning problem, and the
+side a symbol appears on is re-randomised by cycle. Comprehension checks close
+the session.
 
-Instructions and on-screen text are in German.
+## Contents
 
-## Repository layout
-
-| Path | Contents |
+| Path | |
 |---|---|
-| `RALT_PLD.psyexp` | The PsychoPy Builder file — the source of truth for the design |
-| `RALT_PLD.js` | Compiled PsychoJS build that actually runs online |
-| `RALT_PLD-legacy-browsers.js` | Compiled build for older browsers |
-| `RALT_PLD.py` / `RALT_PLD_lastrun.py` | Python builds, for running locally in PsychoPy |
-| `index.html` | Page wrapper; also holds the click-to-advance shim |
+| `RALT_PLD.psyexp` | PsychoPy Builder file — the source of the design |
+| `RALT_PLD.js`, `RALT_PLD-legacy-browsers.js` | Compiled builds that run in the browser |
+| `index.html` | Page wrapper |
 | `trials_*.xlsx`, `trainingtrials_*.xlsx` | Trial lists and reinforcement probabilities |
-| `Mandalas_new/` | Non-social outcome videos |
-| `ADFES/` | Social outcome videos — *not included*, see *Stimuli* below |
-| `kanji/`, `Gears/`, `Food/`, `deco/` | Choice symbols and screen decoration |
-| `sync-to-pavlovia.sh` | Keeps the GitHub and Pavlovia copies in step |
-| `deploy-demo-to-pavlovia.sh` | Publishes the public demo build |
+| `Mandalas_new/`, `kanji/`, `deco/` | Non-social outcome videos, choice symbols, screen furniture |
+| `ADFES/` | Social outcome videos — not included, see below |
+| `scripts/` | Deployment helpers |
 
-## Running it
-
-**Online.** The demo link above needs nothing but a browser. To host your own
-copy, push this repository to a Pavlovia project and set the project to
-PILOTING or RUNNING; Pavlovia serves the compiled JavaScript directly.
-
-**Locally.** Open `RALT_PLD.psyexp` in PsychoPy Builder and press Run, or run
-`RALT_PLD.py` in a PsychoPy Python environment.
-
-> **Note for PsychoPy 2023+ users:** this file was authored in 2022.2.4. Newer
-> versions rewrite it on save and will produce a build that differs from the one
-> used to collect data. Open it to inspect, but do not re-save it unless you
-> intend to regenerate the compiled JavaScript as well.
-
-## Data
-
-Each session writes a CSV with one row per trial, holding the slider response
-and its reaction time, the stimulus filenames used on that trial (neutral,
-positive and negative outcome), the block / cycle / trial counters from the
-nested loops, and session metadata (participant, session, group, date, PsychoPy
-version, OS, measured frame rate). Online runs are written by Pavlovia into the
-project's `data/` directory.
-
-Two things are left to the analysis rather than written out directly: the
-**condition** of a block, which is recoverable from the stimulus filenames, and
-**choice and confidence**, which are derived from the sign and magnitude of the
-slider response.
+Each session writes one CSV row per trial: the slider response and reaction
+time, the stimuli shown, and the block, cycle and trial counters.
 
 ## Stimuli
 
-Non-social stimuli were produced for this study and are included here.
-
-The social stimuli are clips from the **Amsterdam Dynamic Facial Expression Set
-(ADFES)**, distributed by the University of Amsterdam under its own licence:
-access is granted on application, and the set is not free to redistribute. The
-clips are therefore **not included in this repository**. To run the task, request
-ADFES access directly and place the clips in `ADFES/`, keeping the folder and
-file names referenced in `trials_social.xlsx` and `trainingtrials_social.xlsx`.
-
-The screenshot above shows a single frame of one ADFES actor for illustration.
+Non-social stimuli were produced for this study. The social stimuli come from
+the **Amsterdam Dynamic Facial Expression Set (ADFES)**, which is licensed by
+the University of Amsterdam and granted on application; it may not be
+redistributed, so the clips are not included here.
 
 ## Provenance
 
-The task was developed at the University of Vienna and used for data collection
-in 2022; the `as-run-2022` tag marks the version that was run with participants.
-Everything on `main` after that tag is presentation work — instruction wording,
-mouse-driven navigation, and this documentation — with the design untouched.
+Developed at the University of Vienna and used for data collection in 2022. The
+`as-run-2022` tag marks the version participants saw; later commits change
+instruction wording and documentation only, not the design.

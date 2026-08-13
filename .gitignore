@@ -11,3 +11,6 @@ __pycache__/
 # ADFES stimuli are licensed by the University of Amsterdam and are not
 # redistributed here. Request access and place the clips in ADFES/.
 ADFES/
+
+# Vendored PsychoJS. Pavlovia provides its own copy at this path.
+lib/
