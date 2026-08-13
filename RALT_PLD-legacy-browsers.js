@@ -908,7 +908,7 @@ async function experimentInit() {
   text_check_ns = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_check_ns',
-    text: 'Welches dieser Symbole lässt das Muster eher farbig aufleuchten?',
+    text: 'Welches dieser Symbole lässt das Muster eher aufleuchten?',
     font: font_choice,
     units: undefined, 
     pos: [0, 0.2], height: 0.025,  wrapWidth: undefined, ori: 0.0,
@@ -1612,12 +1612,12 @@ function training_trialRoutineBegin(snapshot) {
         deco = "deco/button.png";
         deco_pos_left = [-0.6, -0.01];
         deco_pos_right = [0.6, -0.01];
-        symb = "steht eher für Start";
+        symb = "lässt das Muster eher aufleuchten";
         }
     
     cue_left_path = CueLeft.path;
     cue_right_path = CueRight.path;
-    text_2.setText((("Welches Symbol " + symb) + " ?"));
+    text_2.setText((("Welches Symbol " + symb) + "?"));
     new_neutral_3Clock = new util.Clock();
     new_neutral_3 = new visual.MovieStim({
       win: psychoJS.window,
@@ -2781,7 +2781,7 @@ function trialRoutineBegin(snapshot) {
         deco = "deco/button.png";
         deco_pos_left = [-0.6, -0.01];
         deco_pos_right = [0.6, -0.01];
-        symb = "steht eher für Start";
+        symb = "lässt das Muster eher aufleuchten";
         }
     
     [CueLeft, CueRight] = switchSides(CueLeft, CueRight)
@@ -2794,7 +2794,7 @@ function trialRoutineBegin(snapshot) {
     console.log("deco", deco);
     console.log("deco_pos_left", deco_pos_left);
         console.log("deco_pos_right", deco_pos_right);
-    trial_header.setText((("Welches Symbol " + symb) + " ?"));
+    trial_header.setText((("Welches Symbol " + symb) + "?"));
     new_neutralClock = new util.Clock();
     new_neutral = new visual.MovieStim({
       win: psychoJS.window,
