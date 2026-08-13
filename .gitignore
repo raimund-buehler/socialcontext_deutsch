@@ -1,0 +1,9 @@
+# Results written by PsychoPy / Pavlovia. Participant data does not belong in
+# the code repository — Pavlovia's own GitLab project is the data sink.
+data/
+*.psydat
+*.log
+*.log.gz
+
+.DS_Store
+__pycache__/
