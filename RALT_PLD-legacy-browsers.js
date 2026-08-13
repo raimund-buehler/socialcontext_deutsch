@@ -460,7 +460,7 @@ async function experimentInit() {
   Welcome_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'Welcome_text',
-    text: '\nSie werden im Folgenden aufgefordert, zwischen zwei\nSymbolen, die Sie auf der linken und rechten Seite des\nBildschirms sehen werden, zu wählen.\n\nSie können dies tun, indem Sie den Schieberegler am\nunteren Rand mit der Maus nach links oder rechts\nverschieben.\n\nOb Sie richtig gewählt haben, wird durch ein Bild in der\nMitte des Bildschirms angezeigt.\n\nWir beginnen mit einigen Probeläufen, damit Sie den\nAblauf des Experiments kennenlernen können.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!\n\n',
+    text: '\nSie werden im Folgenden aufgefordert, zwischen zwei\nSymbolen, die Sie auf der linken und rechten Seite des\nBildschirms sehen werden, zu wählen.\n\nSie können dies tun, indem Sie den Schieberegler am\nunteren Rand mit der Maus nach links oder rechts\nverschieben.\n\nOb Sie richtig gewählt haben, wird durch ein Bild in der\nMitte des Bildschirms angezeigt.\n\nWir beginnen mit einigen Probeläufen, damit Sie den\nAblauf des Experiments kennenlernen können.\n\nKlicken Sie, um fortzufahren!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -476,7 +476,7 @@ async function experimentInit() {
   text_3 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_3',
-    text: 'Gleich sehen Sie links und rechts zwei Symbole.\nJedes steht für ein Wort, das Sie der Person in\nder Mitte sagen.\n\nEin Wort wird meistens als Lob verstanden, das\nandere meistens als Beleidigung. Die Wörter sind\nallerdings mehrdeutig: Dasselbe Wort kann einmal\nals Lob und einmal als Beleidigung ankommen.\n\nWie die Person reagiert, zeigt Ihnen, wie Ihr\nWort angekommen ist.\n\nWählen Sie mit dem Schieberegler am unteren Rand\n– nach links für das linke Symbol, nach rechts\nfür das rechte. Je sicherer Sie sind, desto\nweiter schieben Sie ihn.\n\nBeginnen wir mit einer ersten Runde!',
+    text: 'Gleich sehen Sie links und rechts zwei Symbole.\nJedes steht für ein Wort, das Sie der Person in\nder Mitte sagen.\n\nEin Wort wird meistens als Lob verstanden, das\nandere meistens als Beleidigung. Die Wörter sind\nallerdings mehrdeutig: Dasselbe Wort kann einmal\nals Lob und einmal als Beleidigung ankommen.\n\nWie die Person reagiert, zeigt Ihnen, wie Ihr\nWort angekommen ist.\n\nWählen Sie mit dem Schieberegler am unteren Rand:\nnach links für das linke Symbol, nach rechts\nfür das rechte. Je sicherer Sie sind, desto\nweiter schieben Sie ihn.\n\nBeginnen wir mit einer ersten Runde!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 40, ori: 0,
@@ -601,7 +601,7 @@ async function experimentInit() {
   text_4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_4',
-    text: 'Wie Sie gesehen haben, hängt die Reaktion der\nPerson davon ab, welches Symbol Sie wählen.\n\nEin fröhliches Gesicht heißt: Ihr Wort wurde als\nLob verstanden. Ein wütendes Gesicht heißt: Ihr\nWort wurde als Beleidigung verstanden.\n\nAlle Personen reagieren nach demselben Muster.\nEs kommt also nur darauf an, welches Symbol Sie\nwählen – nicht darauf, wer in der Mitte zu sehen\nist.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!',
+    text: 'Wie Sie gesehen haben, hängt die Reaktion der\nPerson davon ab, welches Symbol Sie wählen.\n\nEin fröhliches Gesicht heißt: Ihr Wort wurde als\nLob verstanden. Ein wütendes Gesicht heißt: Ihr\nWort wurde als Beleidigung verstanden.\n\nAlle Personen reagieren nach demselben Muster.\nEs kommt also nur darauf an, welches Symbol Sie\nwählen – nicht darauf, wer in der Mitte zu sehen\nist.\n\nKlicken Sie, um fortzufahren!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -633,7 +633,7 @@ async function experimentInit() {
   Allesklartext_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'Allesklartext_2',
-    text: 'Wie Sie gesehen haben, hängt auch hier das\nErgebnis davon ab, welches Symbol Sie wählen.\n\nDas Muster leuchtet entweder farbig auf oder wird\ngrau und verschwommen.\n\nAlle Muster verhalten sich gleich. Es kommt also\nnur darauf an, welches Symbol Sie wählen – nicht\ndarauf, welches Muster in der Mitte zu sehen ist.\n\nDrücken Sie eine beliebige Taste, um fortzufahren!',
+    text: 'Wie Sie gesehen haben, hängt auch hier das\nErgebnis davon ab, welches Symbol Sie wählen.\n\nDas Muster leuchtet entweder farbig auf oder wird\ngrau und verschwommen.\n\nAlle Muster verhalten sich gleich. Es kommt also\nnur darauf an, welches Symbol Sie wählen – nicht\ndarauf, welches Muster in der Mitte zu sehen ist.\n\nKlicken Sie, um fortzufahren!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -669,7 +669,7 @@ async function experimentInit() {
   CycleText1 = new visual.TextStim({
     win: psychoJS.window,
     name: 'CycleText1',
-    text: 'Wir beginnen jetzt mit dem ersten Block.\n\nAlles wird genauso ablaufen wie bei den \nTrainingsversuchen. Beachten Sie, dass die \nSymbole die Seiten wechseln können!\n\nGeben Sie Ihre Antwort, indem Sie auf den \nSchieberegler unten klicken.\n\nDrücken Sie eine beliebige Taste, um den ersten \nBlock zu starten!\n\n',
+    text: 'Wir beginnen jetzt mit dem ersten Block.\n\nAlles wird genauso ablaufen wie bei den \nTrainingsversuchen. Beachten Sie, dass die \nSymbole die Seiten wechseln können!\n\nGeben Sie Ihre Antwort, indem Sie auf den \nSchieberegler unten klicken.\n\nKlicken Sie, um den ersten \nBlock zu starten!\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0,
@@ -681,7 +681,7 @@ async function experimentInit() {
   CycleText2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'CycleText2',
-    text: 'PAUSE\n\nSie haben einen weiteren Block abgeschlossen! Im nächsten Block werden sich die Symbole und Bilder wieder ändern!\n\nDrücken Sie eine beliebige Taste,\num den nächsten Block zu starten.',
+    text: 'PAUSE\n\nSie haben einen weiteren Block abgeschlossen! Im nächsten Block werden sich die Symbole und Bilder wieder ändern!\n\nKlicken Sie,\num den nächsten Block zu starten.',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0,
@@ -705,7 +705,7 @@ async function experimentInit() {
   CycleText4 = new visual.TextStim({
     win: psychoJS.window,
     name: 'CycleText4',
-    text: 'Sie haben nun einen Block abgeschlossen.\n\nIm nächsten Block werden Sie andere \nBilder sehen.\n\nWie bei den Trainingsversuchen sehen Sie \nentweder Personen oder Muster.\n\nWenn Sie bereit sind, drücken Sie eine \nbeliebige Taste, um den nächsten Block zu \nstarten.\n\n',
+    text: 'Sie haben nun einen Block abgeschlossen.\n\nIm nächsten Block werden Sie andere \nBilder sehen.\n\nWie bei den Trainingsversuchen sehen Sie \nentweder Personen oder Muster.\n\nWenn Sie bereit sind, klicken Sie, um den nächsten Block zu \nstarten.\n\n',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0,
@@ -849,7 +849,7 @@ async function experimentInit() {
   check_instr_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'check_instr_text',
-    text: 'Sie haben nun den Lernteil des Experiments abgeschlossen. \nBitte beantworten Sie jetzt auch die folgenden kurzen Fragen!\n\nDrücken Sie eine beliebige Taste, um fortzufahren!',
+    text: 'Sie haben nun den Lernteil des Experiments abgeschlossen. \nBitte beantworten Sie jetzt auch die folgenden kurzen Fragen!\n\nKlicken Sie, um fortzufahren!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.025,  wrapWidth: 70, ori: 0,
@@ -951,7 +951,7 @@ async function experimentInit() {
   Thank = new visual.TextStim({
     win: psychoJS.window,
     name: 'Thank',
-    text: 'Vielen Dank für Ihre Teilnahme!\n\nDrücken Sie eine beliebige Taste, um das Experiment zu beenden!',
+    text: 'Vielen Dank für Ihre Teilnahme!\n\nKlicken Sie, um das Experiment zu beenden!',
     font: font_choice,
     units: undefined, 
     pos: [0, 0], height: 0.035,  wrapWidth: 70, ori: 0,
