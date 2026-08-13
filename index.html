@@ -14,6 +14,38 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/preloadjs@1.0.1/lib/preloadjs.min.js"></script>
+    <!-- Mouse-only operation ------------------------------------------------
+         The instruction screens end on "any key". The trials themselves are
+         already mouse-driven (slider), and none of the trial routines listen
+         for keys, so translating a click into a keypress is safe there.
+
+         Clicks are only translated when they land on the experiment canvas, so
+         the start-up dialog (jQuery UI, ordinary DOM) is unaffected.
+    -->
+    <script>
+      (function () {
+        var last = 0;
+        document.addEventListener('click', function (ev) {
+          var onCanvas = ev.target && (
+            ev.target.tagName === 'CANVAS' ||
+            (ev.target.closest && ev.target.closest('#root') && !ev.target.closest('.ui-dialog'))
+          );
+          if (!onCanvas) return;
+          var now = Date.now();
+          if (now - last < 250) return;   // ignore accidental double clicks
+          last = now;
+          var opts = { key: ' ', code: 'Space', keyCode: 32, which: 32,
+                       bubbles: true, cancelable: true };
+          document.dispatchEvent(new KeyboardEvent('keydown', opts));
+          window.dispatchEvent(new KeyboardEvent('keydown', opts));
+          setTimeout(function () {
+            document.dispatchEvent(new KeyboardEvent('keyup', opts));
+            window.dispatchEvent(new KeyboardEvent('keyup', opts));
+          }, 30);
+        }, true);
+      })();
+    </script>
+
     <!-- experiment -->
     <script src="./RALT_PLD.js" type="module"></script>
     <!-- legacy browsers -->
